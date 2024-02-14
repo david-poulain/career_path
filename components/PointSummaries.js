@@ -30,15 +30,15 @@ class PointSummaries extends React.Component<Props> {
 
     const blocks = [
       {
-        label: 'Current level',
+        label: 'Niveau actuel',
         value: currentLevel
       },
       {
-        label: 'Total points',
+        label: 'Total de points',
         value: totalPoints
       },
       {
-        label: 'Points to next level',
+        label: "Points jusqu'au niveau suivant",
         value: pointsToNextLevel
       }
     ]

@@ -1,4 +1,4 @@
-// @flow
+﻿// @flow
 
 import { tracks, milestones, categoryColorScale } from '../constants'
 import React from 'react'
@@ -69,13 +69,13 @@ class Track extends React.Component<Props> {
           {currentMilestone ? (
             <div style={{flex: 1}}>
               <h3>{currentMilestone.summary}</h3>
-              <h4>Example behaviors:</h4>
+              <h4>Exemples de comportements :</h4>
               <ul>
                 {currentMilestone.signals.map((signal, i) => (
                   <li key={i}>{signal}</li>
                 ))}
               </ul>
-              <h4>Example tasks:</h4>
+              <h4>Exemples de tâches :</h4>
               <ul>
                 {currentMilestone.examples.map((example, i) => (
                   <li key={i}>{example}</li>
