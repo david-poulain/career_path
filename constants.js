@@ -71,7 +71,6 @@ export type Track = {
 }
 
 type Tracks = {|
-  'MOBILE': Track,
   'WEB_CLIENT': Track,
   'FOUNDATIONS': Track,
   'SERVERS': Track,
@@ -90,136 +89,68 @@ type Tracks = {|
 |}
 
 export const tracks: Tracks = {
-    "MOBILE": {
-        "displayName": "Mobile",
-        "category": "A",
-        "description": "Développe une expertise en ingénierie de plateforme mobile native, telle que iOS ou Android",
-        "milestones": [{
-            "summary": "Travaille efficacement au sein des architectures iOS ou Android établies, en suivant les meilleures pratiques actuelles",
-            "signals": [
-                "Fournit des fonctionnalités nécessitant des modifications locales simples",
-                "Ajoute des actions simples appelant des points de terminaison du serveur",
-                "Réutilise correctement les composants existants",
-            ],
-            "examples": [
-                "A ajouté un bouton existant sur une autre surface iOS",
-                "Ajoute un bouton de suivi pour les publications sur Android",
-                "A récupéré et affiché un nouveau flux, en utilisant les styles d'éléments de flux existants",
-            ],
-        }, {
-            "summary": "Développe de nouvelles instances de l'architecture existante ou des améliorations mineures de l'architecture existante",
-            "signals": [
-                "Définit de nouveaux objets proto-générés utiles et appropriés",
-                "Crée de simples nouvelles activités sur Android",
-                "Migre le code des anciens modèles vers les nouveaux modèles",
-            ],
-            "examples": [
-                "A mis à niveau SDWebImage vers une nouvelle version majeure",
-                "Ajouté la prise en charge du rendu d'un nouveau type d'élément de flux",
-                "Prototypé rapidement une nouvelle fonctionnalité simple",
-            ],
-        }, {
-            "summary": "Conçoit de nouvelles fonctionnalités majeures et démontre une compréhension nuancée des contraintes de la plateforme mobile",
-            "signals": [
-                "Implémente des fonctionnalités complexes avec une grande surface produit",
-                "Travaille efficacement avec le framework de programmation réactive Android",
-                "Ajoute la prise en charge de nouvelles fonctionnalités iOS après une mise à niveau majeure d'iOS",
-            ],
-            "examples": [
-                "Conçu une stratégie de mise en cache iOS pour la lecture hors ligne",
-                "Construit un lecteur de séries sur Android",
-                "Informé l'équipe des récents changements de bonnes pratiques et des obsolescences",
-            ],
-        }, {
-            "summary": "Construit des architectures complexes et réutilisables qui pionnent les meilleures pratiques et permettent aux ingénieurs de travailler plus efficacement",
-            "signals": [
-                "Pionne des stratégies de migration d'architecture qui réduisent la charge du programmeur",
-                "Corrige des problèmes subtils de gestion de la mémoire",
-                "Implémente des suppressions interactives qui apportent de la joie",
-            ],
-            "examples": [
-                "A mis à niveau CocoaPods vers une nouvelle version majeure",
-                "Conçu une architecture pour récupérer et rendre des éléments de flux",
-                "A migré la couche de persistance Android vers la programmation réactive",
-            ],
-        }, {
-            "summary": "Est un expert de premier plan de l'industrie en ingénierie mobile ou définit la direction mobile stratégique pour une équipe d'ingénierie",
-            "signals": [
-                "Définit des objectifs à long terme et assure que les projets en cours servent ces objectifs",
-                "Conçoit et construit des interactions utilisateur innovantes et de premier plan dans l'industrie",
-                "Invente de nouvelles techniques pour étirer de manière responsable les limites de la plateforme Android",
-            ],
-            "examples": [
-                "A défini et mené un plan de migration complet vers Swift ou Kotlin",
-                "A implémenté des vues recycleurs Android avant l'existence du support de la plateforme",
-                "A pionné des abstractions au niveau de l'application pour un environnement multi-applications",
-            ],
-        }],
-    },
-
     "WEB_CLIENT": {
-        "displayName": "Client Web",
+        "displayName": "Technologie front",
         "category": "A",
-        "description": "Développe une expertise dans les technologies du client Web, telles que HTML, CSS et JavaScript",
+        "description": "Développe une expertise dans les technologies telles que HTML et JavaScript.",
         "milestones": [{
-            "summary": "Travaille efficacement au sein des architectures client Web établies, en suivant les meilleures pratiques actuelles",
+            "summary": "Individuel : Travaille efficacement au sein des architectures client Web établies, en suivant les pratiques actuelles de l'équipe.",
             "signals": [
-                "Effectue des modifications mineures sur les écrans existants",
-                "Corrige des problèmes simples de qualité de conception",
-                "Utilise CSS de manière appropriée, en suivant le guide de style",
+                "Effectue des modifications mineures sur les écrans existants.",
+                "Corrige des problèmes simples de qualité de conception.",
+                "Connait et applique le clean code JS."
             ],
             "examples": [
-                "Implémenté un pied de page collant sur la page des publications",
-                "Connecté l'action pour masquer une publication à partir d'un flux",
-                "Construit l'écran d'historique de paiement en utilisant ResponseScreen",
+                "A changé la position d'un bouton dans un page.",
+                "A rajouté un formulaire de validation.",
+                "A récupérer l'information d'une offre et l'a affiché dans un tableau d'offre sur une page du tunnel."
             ],
         }, {
-            "summary": "Développe de nouvelles instances de l'architecture existante ou des améliorations mineures de l'architecture existante",
+            "summary": "Equipe : Remet en question et fait évoluer positivement l'architecture existante des applications ou les pratiques de l'équipe.",
             "signals": [
-                "Fait des abstractions sensées basées sur les modèles de template et de code",
-                "Spécifie et construit des composants interactifs de manière indépendante",
-                "Prototype rapidement de nouvelles fonctionnalités simples",
-            ],
-            "examples": [
-                "Construit le composant de saisie de carte de crédit",
-                "Créé un modèle de boutons partagés",
-                "Construit un système de modales",
-            ],
-        }, {
-            "summary": "Conçoit de nouvelles fonctionnalités majeures et démontre une compréhension nuancée des contraintes du navigateur",
-            "signals": [
+                "Fait des refactorisations pertinentes du code de l'application.", // craft
                 "Fournit des retours de conception utiles et propose des alternatives réalisables",
-                "Effectue des tâches systémiques pour minimiser significativement la taille du bundle",
-                "Agit en tant que gardien de tout le code client Web",
+                "Construit des composants complexes de manière indépendante."
+                "A proposer une nouvelle pratique adoptées par l'équipe."
+                "Agit en tant que gardien de la structure du code",
+            ],  
+            "examples": [
+                "Construit le composant de saisie de carte de crédit.",
+                "A mutualisé les steps du tunnel, tout en gardant la posibilité de personnalisé chaque tunnel."
+               
+            ],
+        }, {  
+            "summary": "Hors équipe : Conçoit de nouvelles fonctionnalités grâce à une compréhension nuancée des contraintes des applications.",
+            "signals": [
+                "Propose des modifications acceptées dans les code bases des autres équipes."
+                "Crée des packages npm utilisés par quelques équipes.
             ],
             "examples": [
-                "Conçu une stratégie de chargement de polices pour Medium",
-                "A étudié l'utilité des service workers pour Medium",
+                "Hugo changement chez partner ",
+                "A conçu un design system utilisé par tous les composants front"
+                "Développement d'une librairie blazor partagé plusieurs équipes du domaine.",
                 "Conçu et implémenté ResponseScreen",
             ],
         }, {
-            "summary": "Construit des architectures complexes et réutilisables qui pionnent les meilleures pratiques et permettent aux ingénieurs de travailler plus efficacement",
+            "summary": "All tech : Construit des architectures qui pionnent les meilleures pratiques et permettent aux ingénieurs de travailler plus efficacement.",
             "signals": [
-                "Pionne des migrations d'architecture qui réduisent la charge du programmeur",
-                "Implémente des transitions d'UI complexes qui apportent de la joie",
-                "Prend des décisions architecturales qui éliminent des classes entières de bugs",
+                "A créé et répendu un standard technologique au sein de l'entreprise."
+
+                
             ],
             "examples": [
-                "Conçu le système de transformation et de delta des publications de Medium",
-                "Implémenté le flou de texte défilant de Medium sur les images",
-                "Conçu et pionné le stockage de modèle basé sur Proto",
+
+                "Proto NP6",
+                
+                "Disgn system"
             ],
         }, {
-            "summary": "Est un expert de premier plan de l'industrie en client Web ou définit la direction stratégique du client Web pour une équipe d'ingénierie",
+            "summary": "Superstar : Est un expert de premier plan de l'industrie des technologies front ou définit la direction stratégique front de l'entreprise.",
             "signals": [
-                "Invente de nouvelles techniques pour innover et surmonter les contraintes du navigateur",
-                "Identifie et résout des problèmes systémiques avec l'architecture actuelle",
-                "Définit une vision à long terme pour le client Web et veille à ce que les projets y répondent",
+               
             ],
             "examples": [
-                "A inventé CSS en JS",
-                "Défini et mené la stratégie de migration vers Lite",
-                "Implémenté le flux de données unidirectionnel jusqu'à son achèvement",
+               
             ],
         }],
     },
