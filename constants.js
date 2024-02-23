@@ -101,48 +101,48 @@ export const tracks: Tracks = {
                 "Connait et applique le clean code JS."
             ],
             "examples": [
-                "A changé la position d'un bouton dans un page.",
-                "A rajouté un formulaire de validation.",
+                "A changé la position d'un bouton dans une page.",
+                "A rajouté les validations sur le formulaire de situation professionelle.",
                 "A récupérer l'information d'une offre et l'a affiché dans un tableau d'offre sur une page du tunnel."
             ],
         }, {
-            "summary": "Equipe : Remet en question et fait évoluer positivement l'architecture existante des applications ou les pratiques de l'équipe.",
+            "summary": "Equipe : Remet en question et fait évoluer positivement l'architecture existante des applications et/ou les pratiques de l'équipe.",
             "signals": [
-                "Fait des refactorisations pertinentes du code de l'application.", // craft
-                "Fournit des retours de conception utiles et propose des alternatives réalisables",
+                "Fournit des retours de conception utiles et propose des alternatives réalisables.",
                 "Construit des composants complexes de manière indépendante."
                 "A proposer une nouvelle pratique adoptées par l'équipe."
-                "Agit en tant que gardien de la structure du code",
+                "Agit en tant que gardien de la structure du code.",
             ],  
             "examples": [
-                "Construit le composant de saisie de carte de crédit.",
-                "A mutualisé les steps du tunnel, tout en gardant la posibilité de personnalisé chaque tunnel."
+                "A conseiller au cours d'une PR, le découpage plus fin d'un composant pour rendre les éléments plus réutilisable."
+                "A construit le composant de saisie de carte de crédit.",
+                "A factorisé les steps du tunnel, tout en gardant la posibilité de personnaliser chaque tunnel."
                
             ],
         }, {  
-            "summary": "Hors équipe : Conçoit de nouvelles fonctionnalités grâce à une compréhension nuancée des contraintes des applications.",
+            "summary": "Hors équipe : Conçoit du code utilisé pour le développement des appications voisines.",
             "signals": [
-                "Propose des modifications acceptées dans les code bases des autres équipes."
-                "Crée des packages npm utilisés par quelques équipes.
+                "Intervient de manière pertinente dans le code d'autres équipes."
+                "Crée des packages npm utilisés par d'autres équipes.
             ],
             "examples": [
-                "Hugo changement chez partner ",
-                "A conçu un design system utilisé par tous les composants front"
-                "Développement d'une librairie blazor partagé plusieurs équipes du domaine.",
-                "Conçu et implémenté ResponseScreen",
+                "A developpé et répandu la librairie des "dynamic components".
+
+                "A fait une PR dans chaque repo des équipes du domaine pour rendre compliant le code avec une RFC."
             ],
         }, {
             "summary": "All tech : Construit des architectures qui pionnent les meilleures pratiques et permettent aux ingénieurs de travailler plus efficacement.",
             "signals": [
-                "A créé et répendu un standard technologique au sein de l'entreprise."
+                "A créé et répandu un standard technologique au sein de l'entreprise."
+                
 
                 
             ],
             "examples": [
 
                 "Proto NP6",
-                
-                "Disgn system"
+                "A créer la RFC"
+                "A conçu un design system utilisé par tous les composants front."
             ],
         }, {
             "summary": "Superstar : Est un expert de premier plan de l'industrie des technologies front ou définit la direction stratégique front de l'entreprise.",
